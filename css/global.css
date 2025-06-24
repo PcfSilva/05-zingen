@@ -1,0 +1,74 @@
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font: inherit;
+}
+
+:root{
+    --bg-color: #09090B;
+    --surface-color: #18181B;
+    --stroke-color: #27272A;
+    --text-color-primary: #F4F4F5;
+    --text-color-secondary: #A1A1AA;
+
+    --ff-sans: "Inter", system-ui, sans-serif;
+
+    --fw-bold: 800;
+    --fw-md: 500;
+    --fw-base: 400;
+
+    --fs-2xl: 2.5rem;
+    --fs-xl: 1.5rem;
+    --fs-lg: 1.25rem;
+    --fs-md: 0.875rem;
+    --fs-base: 1rem;
+}
+
+html{
+    font-family: var(--ff-sans);
+    font-weight: var(--fw-base);
+    font-size: var(--fs-base);
+    color: var(--text-color-primary);
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+h1, h2, h3{
+    line-height: 1.2;
+    font-weight: var(--fw-bold);
+    letter-spacing: -0.04em;
+}
+
+h1{
+    font-size: var(--fs-2xl);
+}
+
+h2{
+    font-size: var(--fs-xl);
+}
+
+h3{
+    font-size: var(--fs-lg);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul[hole="list"]{
+    list-style: none;
+}
+
+@media(width >= 80em){
+    :root{
+        --fs-2xl: 4rem;
+        --fs-xl: 3rem;
+        --fs-lg: 2rem;
+    }
+}
